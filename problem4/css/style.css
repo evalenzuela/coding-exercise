@@ -1,0 +1,41 @@
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+form, form label, 
+form input, form select {
+    width: 100%;
+}
+
+form input, form select {
+    height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+form > p:last-child {
+    text-align: right;
+}
+
+.btn {
+    width: 8rem;
+    height: 2.5rem;
+}
+
+.btn-submit {
+    background-color: #FE642E;
+}
+
+.btn-cancel {
+    background-color: #BDBDBD;
+}

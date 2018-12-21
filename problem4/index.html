@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type='text/css' />
+</head>
+<body>
+    <div class="wrapper">
+        <form>
+            <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" pattern='[A-Za-z\\s]*' minlength="1" maxlength="100" required  />
+            </p>
+            <p>
+                <label for="address_1">Address 1</label>
+                <input type="text" name="address_1" id="address_1" minlength="1" maxlength="100" required />
+            </p>
+            <p>
+                <label for="address_2">Address 2</label>
+                <input type="text" name="address_2" id="address_2" minlength="0" maxlength="100" />
+            </p>
+            <p>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" minlength="1" maxlength="50" required />
+            </p>
+            <p>
+                <label for="state">State</label>
+                <select name="state" id="state" required>
+                    <option value="NY">New York</option>
+                    <option value="NJ">New Jersey</option>
+                </select>
+            </p>
+            <p>
+                <label for="zip">Zip Code</label>
+                <input type="number" name="zip" id="zip" minlength="5" maxlength="5" required />
+            </p>
+            <p>
+                <button type="submit" class="btn btn-submit">
+                    OK
+                </button>
+                <button type="reset" class="btn btn-cancel">
+                    Cancel
+                </button>
+            </p>
+                    
+        </form>
+    </div>
+
+</body>
+</html>
